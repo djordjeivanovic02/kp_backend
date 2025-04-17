@@ -2,7 +2,6 @@
 
 namespace Core\Validator;
 
-use Core\Validation\ValidatorInterface;
 use Exception;
 
 class MaxMindValidator implements ValidatorInterface{

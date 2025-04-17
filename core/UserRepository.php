@@ -21,6 +21,7 @@ class UserRepository{
     }
 
     public function insertLog(int $userId): void{
-        $this->db->query("INSERT INTO user_log (action, user_id, log_time) VALUES ('register', ?, 'NOW()')", [$userId]);
+        $created = 'NOW()';
+        $this->db->query("INSERT INTO user_log (action, user_id, log_time) VALUES ('register', ?, $created)", [$userId]);
     }
 }

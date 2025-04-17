@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Validation;
+namespace Core\Validator;
 
 use Exception;
 
